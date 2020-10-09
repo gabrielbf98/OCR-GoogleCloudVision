@@ -20,7 +20,7 @@ const connect = async () => {
 
 const app = express();
 
-process.env.GOOGLE_APPLICATION_CREDENTIALS = '/home/aluno/Downloads/ocrGoogle-master/19196-75ea07bc200f.json'
+process.env.GOOGLE_APPLICATION_CREDENTIALS = '/home/aluno/Downloads/ocrGoogle-master/19196-75ea07bc200f.json' // inserir credenciais
 
 
 app.disable('x-powered-by')

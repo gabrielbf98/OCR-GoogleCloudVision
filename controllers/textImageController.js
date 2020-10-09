@@ -16,9 +16,12 @@ const getText = async(req, res, next) => {
             if(detections.length >  0) {
                 //text exists
                 detections.map(d =>{
-                    console.log("test: ",d.description);
+                    // console.log("test: ",d.description);
+                    let test=[];
+                    test.push(d.description);
+                    let spliceTest = test.splice('\n');
+                    console.log('spliceTest', spliceTest)
                 })
-                
                 const [ text, ...others ] = detections
                 createDoc(imageDesc.filename, text.description)
                 await renderSuccess(req, res, text.description)
